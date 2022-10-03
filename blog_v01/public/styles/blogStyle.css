@@ -1,0 +1,106 @@
+header {
+   grid-area: header;
+}
+
+nav {
+   grid-area: nav;
+}
+
+main {
+   grid-area: main;
+}
+
+aside {
+   grid-area: aside;
+}
+
+footer {
+   grid-area: footer;
+   text-align: center;
+   color: brown;
+   text-transform: uppercase;
+}
+
+body {
+   display: grid;
+   grid-template-columns: auto auto 20%;
+   grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main aside"
+      "footer footer footer";
+   gap: 14px;
+   padding: 28px;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav li {
+   display: inline-block;
+   margin: 6px 0 6px 0;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   padding: 5px 15px;
+   background-color: brown;
+}
+
+aside ul {
+   list-style: none;
+}
+
+nav ul,
+aside ul {
+   margin: 0;
+   padding: 0;
+}
+
+
+
+header h1 {
+   background-color:white;
+   display: inline-block;
+   padding: 3px 9px;
+}
+
+
+.card-body-no-border {
+   border-color: white;
+   background-image: url('../images/kaokao.png');
+}
+
+.card-footer {
+   margin-bottom: 0;
+}
+
+.card {
+   margin-bottom: 14px;
+}
+
+.tag-verde {
+   background-color: green;
+}
+
+.tag-vermelho {
+   background-color: red;
+}
+
+.tag-azul {
+   background-color: blue;
+}
+
+.tag-ciano {
+   background-color: cyan;
+}
+
+.tag-magenta {
+   background-color: magenta;
+}
+
+.tag-ouro {
+   background-color: gold;
+}
